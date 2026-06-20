@@ -1,5 +1,8 @@
 player = {
-    "name":,
+    "name": "gamer",
+    "gold": 0,
+    "weapon": "fists",
+    "armor": "clothes",
     "health": 100,
     "stamina": 50,
     "mana": 10,
@@ -11,7 +14,7 @@ player = {
     "magicka": 0,
     "ranged": 0,
     "dodge": 0,
-    "sneak": 0,
+    "stealth": 0,
     "phys_miti": 0,
     "magi_miti": 0,
     "rang_miti": 0,
