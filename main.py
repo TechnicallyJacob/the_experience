@@ -12,7 +12,7 @@ while True:
 
     user_input = input("What would you like to do? \nChoices = 'gold', 'inventory', 'stats', 'town', 'forest', 'end' \n").strip().lower()
 
-    while True:
+    while not True:
         if user_input.strip().lower() == "gold":
             print(player["gold"])
             time.sleep(0.5)
@@ -61,14 +61,8 @@ while True:
         elif user_input.strip().lower() == "forest":
             forest()
             break
-        else:
-            print("Invalid input, please try again.")
-            time.sleep(3)
-            break
     if user_input.strip().lower() == "end":
-        print(f"Goodbye {player['name']}!")
         player["health"] = 0
-        break
 
     if player["health"] == 0:
         print(f"Good luck next time {player['name']}")
