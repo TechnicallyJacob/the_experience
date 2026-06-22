@@ -17,7 +17,7 @@ while running:
             running = False
         
     screen.fill("purple")
-
+    
     intro
 
     user_input = input("What would you like to do? \nChoices = 'gold', 'inventory', 'stats', 'town', 'forest', 'end' \n").strip().lower()
