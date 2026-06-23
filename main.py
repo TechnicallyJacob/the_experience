@@ -85,3 +85,5 @@ while running:
         running = False
         pygame.quit()
         break
+
+    testing at home pc 
