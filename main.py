@@ -1,23 +1,12 @@
 import time
-import pygame
 from funcs import intro, town, forest
 from objs.player_object import player
 
-pygame.init()
-screen = pygame.display.set_mode((1280, 720))
-clock = pygame.time.Clock()
 running = True
 user_input = ""
 
-
 while running:
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        
-    screen.fill("purple")
-    
     intro
 
     user_input = input("What would you like to do? \nChoices = 'gold', 'inventory', 'stats', 'town', 'forest', 'end' \n").strip().lower()
@@ -74,16 +63,8 @@ while running:
     if user_input.strip().lower() == "end":
         player["health"] = 0
         running = False
-        pygame.quit()
-
-    pygame.display.flip()
-
-    clock.tick(60)
 
     if player["health"] == 0:
         print(f"Good luck next time {player['name']}")
         running = False
-        pygame.quit()
         break
-
-    testing at home pc 
